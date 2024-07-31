@@ -2,8 +2,8 @@ pipeline {
     agent any
     tools { 
         maven 'Maven' 
-
     }
+    stages{
           stage ('compile') {
             steps {
                 bat "mvn compile" 
@@ -25,4 +25,4 @@ pipeline {
             }
          }
     }
-
+}
