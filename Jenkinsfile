@@ -4,7 +4,7 @@ pipeline {
         maven 'maven' 
     }
     stages{
-          stage ('compile') {
+          stage ("compile") {
             steps {
                 bat "mvn compile" 
             }
